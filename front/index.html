@@ -9,35 +9,34 @@
     <!-- Path to Framework7 Library CSS-->
     <link rel="stylesheet" href="css/framework7.ios.min.css">
     <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="css/fa-svg-with-js.css">
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="css/my-app.css">
   </head>
   <body>
     <!-- Status bar overlay for fullscreen mode-->
     <div class="statusbar-overlay"></div>
-    <!-- Panels overlay-->
-    <div class="panel-overlay"></div>
-    <!-- Left panel with reveal effect-->
-    <div class="panel panel-left panel-reveal">
-      <div class="content-block">
-        <p>Left panel content goes here</p>
-      </div>
-    </div>
-    <!-- Right panel with cover effect-->
-    <div class="panel panel-right panel-cover">
-      <div class="content-block">
-        <p>Right panel content goes here</p>
-      </div>
-    </div>
     <!-- Views-->
-    <div class="views">
+    <div class="views whiteBGColor">
       <!-- Your main view, should have "view-main" class-->
-      <div class="view view-main">
+      <div class="view view-main whiteBGColor">
         <!-- Top Navbar-->
-        <div class="navbar">
+        <div class="navbar whiteBGColor">
           <div class="navbar-inner">
             <!-- We have home navbar without left link-->
-            <div class="center sliding">Awesome App</div>
+            <div class="left">
+              <i class="fas fa-check-circle"></i>
+              <!-- Search bar -->
+              <!-- <form class="searchbar whiteBGColor">
+                <div class="searchbar-inner">
+                  <div class="searchbar-input-wrap">
+                    <input type="search" placeholder="Search">
+                    <i class="searchbar-icon"></i>
+                    <span class="input-clear-button"></span>
+                  </div>
+                </div>
+              </form> -->
+            </div>
             <div class="right">
               <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
             </div>
@@ -97,7 +96,6 @@
     </div>
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="js/framework7.min.js"></script>
-    <!-- Path to your app js-->
-    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="js/fontawesome-all.min.js"></script>
   </body>
 </html>
