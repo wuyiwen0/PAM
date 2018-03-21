@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
     <link rel="stylesheet" href="css/fa-svg-with-js.css">
     <!-- Path to your custom app styles-->
-    <link rel="stylesheet" href="css/my-app.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <!-- Status bar overlay for fullscreen mode-->
@@ -25,20 +25,11 @@
           <div class="navbar-inner">
             <!-- We have home navbar without left link-->
             <div class="left">
-              <i class="fas fa-check-circle"></i>
-              <!-- Search bar -->
-              <!-- <form class="searchbar whiteBGColor">
-                <div class="searchbar-inner">
-                  <div class="searchbar-input-wrap">
-                    <input type="search" placeholder="Search">
-                    <i class="searchbar-icon"></i>
-                    <span class="input-clear-button"></span>
-                  </div>
-                </div>
-              </form> -->
+              <a href="#" class="grayColor"><i class="fas fa-search"></i></a>
             </div>
+            <div class="center sliding">首页</div>
             <div class="right">
-              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+              <a href="#" class="grayColor"><i class="fas fa-music"></i></a>
             </div>
           </div>
         </div>
@@ -46,56 +37,92 @@
         <div class="pages navbar-through toolbar-through">
           <!-- Page, data-page contains page name-->
           <div data-page="index" class="page">
-            <!-- Scrollable page content-->
             <div class="page-content">
-              <div class="content-block-title">Welcome To My Awesome App</div>
-              <div class="content-block">
-                <div class="content-block-inner">
-                  <p>Couple of worlds here because my app is so awesome!</p>
-                  <p>Duis sed erat ac eros ultrices pharetra id ut tellus. Praesent rhoncus enim ornare ipsum aliquet ultricies. Pellentesque sodales erat quis elementum sagittis.</p>
+              <!-- banner图           -->
+            <a href=""><img width="100%" src="img/1.jpg"/></a>
+              <!-- 卡片列表1 -->
+              <div class="card facebook-card">
+                <div class="card-header">
+                  <div class="facebook-avatar"><img src="img/2.jpg" width="34" height="34"></div>
+                  <div class="facebook-name">John Doe</div>
+                  <div class="facebook-date">Monday at 2:15 PM</div>
                 </div>
-              </div>
-              <div class="content-block-title">What about simple navigation?</div>
-              <div class="list-block">
-                <ul>
-                  <li><a href="about.html" class="item-link">
-                      <div class="item-content">
-                        <div class="item-inner"> 
-                          <div class="item-title">About</div>
-                        </div>
-                      </div></a></li>
-                  <li><a href="services.html" class="item-link">
-                      <div class="item-content"> 
-                        <div class="item-inner">
-                          <div class="item-title">Services</div>
-                        </div>
-                      </div></a></li>
-                  <li><a href="form.html" class="item-link">
-                      <div class="item-content"> 
-                        <div class="item-inner">
-                          <div class="item-title">Form</div>
-                        </div>
-                      </div></a></li>
-                </ul>
-              </div>
-              <div class="content-block-title">Side panels</div>
-              <div class="content-block">
-                <div class="row">
-                  <div class="col-50"><a href="#" data-panel="left" class="button open-panel">Left Panel</a></div>
-                  <div class="col-50"><a href="#" data-panel="right" class="button open-panel">Right Panel</a></div>
+                <div class="card-content">
+                  <div class="card-content-inner">
+                    <p>What a nice photo i took yesterday!</p>
+                    <img src="img/2.jpg" width="100%">
+                    <p class="color-gray">Likes: 112    Comments: 43</p>
+                  </div>
                 </div>
-              </div>
+                <div class="card-footer">
+                  <a href="#" class="link">Like</a>
+                  <a href="#" class="link">Comment</a>
+                  <a href="#" class="link">Share</a>
+                </div>
+              </div> 
+              <!-- 卡片列表1 end -->
+              <!-- 卡片列表2 -->
+              <div class="card facebook-card">
+                <div class="card-header">
+                  <div class="facebook-avatar"><img src="img/2.jpg" width="34" height="34"></div>
+                  <div class="facebook-name">John Doe</div>
+                  <div class="facebook-date">Monday at 2:15 PM</div>
+                </div>
+                <div class="card-content">
+                  <div class="card-content-inner">
+                    <p>What a nice photo i took yesterday!</p>
+                    <img src="img/2.jpg" width="100%">
+                    <p class="color-gray">Likes: 112    Comments: 43</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="link">Like</a>
+                  <a href="#" class="link">Comment</a>
+                  <a href="#" class="link">Share</a>
+                </div>
+              </div> 
+              <!-- 卡片列表2 end -->
             </div>
           </div>
         </div>
         <!-- Bottom Toolbar-->
-        <div class="toolbar">
-          <div class="toolbar-inner"><a href="#" class="link">Link 1</a><a href="#" class="link">Link 2</a></div>
-        </div>
+        <div class="toolbar tabbar tabbar-labels">
+          <div class="toolbar-inner">
+              <a href="#tab1" class="tab-link active">
+                  <i class="icon fas fa-home fa-lg" style="color:Tomato"></i>
+                  <span class="tabbar-label redColor">首页</span>
+              </a>
+              <a href="#tab2" class="tab-link">
+                  <i class="icon far fa-compass fa-lg"></i>
+                  <span class="tabbar-label">发现</span>
+              </a>
+              <a href="#" class="tab-link open-about">
+                  <i class="icon fas fa-plus-square fa-2x" style="color:Tomato"></i>
+                  
+              </a>
+              <!-- About Popup -->
+              <div class="popup popup-about">
+                <div class="content-block">
+                  <p>About</p>
+                  <p><a href="#" class="close-popup">Close popup</a></p>
+                  <p>Lorem ipsum dolor ...</p>
+                </div>
+              </div>
+              <a href="#tab4" class="tab-link">
+                  <i class="icon fas fa-bars fa-lg"></i>
+                  <span class="tabbar-label">发现</span>
+              </a>
+              <a href="#tab5" class="tab-link">
+                  <i class="icon fas fa-user fa-lg"></i>
+                  <span class="tabbar-label">我的</span>
+              </a>
+          </div>
+        </div><!-- toolbar end -->
       </div>
     </div>
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="js/framework7.min.js"></script>
     <script type="text/javascript" src="js/fontawesome-all.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.2.2.js"></script>
   </body>
 </html>
